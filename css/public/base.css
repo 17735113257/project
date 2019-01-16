@@ -1,0 +1,55 @@
+
+/* css样式初始化 */
+html,body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd,span{
+	 margin: 0;
+	 padding: 0;
+	 list-style: none;
+	 font-size: 12px;
+	 font-family: "微软雅黑";
+	 color: #050505;
+}
+
+html,body {
+	/* background-color: #f3f5f7;*/
+}
+
+a {
+	text-decoration: none;
+	color: #050505;
+}
+a:hover {
+	 color: blue;
+}
+
+input,img {
+	border: 0 none;
+	outline-style: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+	 content: "";
+	 height: 0;
+	 line-height: 0;
+	 display: block;
+	 clear: both;
+	 visibility: hidden;
+}
+.clearfix {
+	 zoom: 1;
+}
+
+.w {
+	 width: 1180px;
+	 margin: 0 auto;
+}
+
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
