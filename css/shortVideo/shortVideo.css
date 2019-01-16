@@ -341,6 +341,7 @@
   overflow: hidden;
 }
 .main .modulars.relatedProduct {
+  position: relative;
   background: url('../../images/shortVideo/related_product_bg.png') no-repeat center center;
 }
 .main .modulars.relatedProduct .title h2 {
@@ -376,53 +377,63 @@
   border-right: 0px solid #fff;
 }
 .main .modulars.relatedProduct .container .content {
+  margin: 0 auto;
   height: 470px;
-  border: 4px solid blue;
-  position: relative;
-  display: flex;
-  padding-top: 30px;
-  box-sizing: border-box;
 }
 .main .modulars.relatedProduct .container .content ul {
-  flex: 1;
-  display: flex;
+  width: 100%;
+  padding-top: 20px;
+  box-sizing: border-box;
+  height: 470px;
+  overflow: hidden;
+  position: relative;
 }
 .main .modulars.relatedProduct .container .content ul .content_item {
-  flex: 1;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 3000px;
+  height: 445px;
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  border: 1px solid red;
 }
 .main .modulars.relatedProduct .container .content ul .content_item.hide {
   display: none;
 }
 .main .modulars.relatedProduct .container .content ul .content_item .item {
-  display: flex;
-  flex: 1;
+  float: left;
+  margin-right: 30px;
+  width: 570px;
+  background: #fff;
 }
 .main .modulars.relatedProduct .container .content ul .content_item .item .header {
+  width: 100%;
   padding: 26px 150px 26px 40px;
   box-sizing: border-box;
   height: 130px;
   border: 0px solid #666;
 }
 .main .modulars.relatedProduct .container .content ul .content_item .item .header h3 {
+  width: 100%;
   color: #fff;
   font-size: 16px;
   margin-bottom: 10px;
   font-weight: 400;
 }
 .main .modulars.relatedProduct .container .content ul .content_item .item .header p {
+  width: 100%;
   color: #d7d5d5;
   font-size: 14px;
 }
 .main .modulars.relatedProduct .container .content ul .content_item .item .body {
-  flex: 1;
   color: #666;
-  background-color: #fff;
-  padding: 26px 40px;
+  padding: 16px 40px;
+  padding-bottom: 0px;
   box-sizing: border-box;
+  height: 280px;
+  background: #fff;
+}
+.main .modulars.relatedProduct .container .content ul .content_item .item .body ul {
+  height: 100%;
 }
 .main .modulars.relatedProduct .container .content ul .content_item .item .body ul li {
   margin-bottom: 30px;
@@ -431,7 +442,7 @@
   color: #333;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .main .modulars.relatedProduct .container .content ul .content_item .item .body ul li p {
   color: #666;
@@ -447,12 +458,6 @@
   text-align: center;
   line-height: 35px;
 }
-.main .modulars.relatedProduct .container .content ul .content_item .item:nth-child(2n + 1) {
-  margin-right: 20px;
-}
-.main .modulars.relatedProduct .container .content ul .content_item .item:nth-child(2n) {
-  margin-right: 0px;
-}
 .main .modulars.relatedProduct .container .content ul .content_item:nth-child(1) .item:nth-child(1) .header {
   background: url('../../images/shortVideo/related_product_one_top_bg.png') no-repeat;
   background-size: 100% 100%;
@@ -460,6 +465,31 @@
 }
 .main .modulars.relatedProduct .container .content ul .content_item:nth-child(1) .item:nth-child(2) .header {
   background: url('../../images/shortVideo/related_product_one_top1_bg.png') no-repeat;
+  background-size: 100% 100%;
+  background-color: #3d3d42;
+}
+.main .modulars.relatedProduct .container .content ul .content_item:nth-child(2) .item:nth-child(1) .header {
+  background: url('../../images/shortVideo/related_product_three_top_bg.png') no-repeat;
+  background-size: 100% 100%;
+  background-color: #3d3d42;
+}
+.main .modulars.relatedProduct .container .content ul .content_item:nth-child(2) .item:nth-child(2) .header {
+  background: url('../../images/shortVideo/related_product_three_top1_bg.png') no-repeat;
+  background-size: 100% 100%;
+  background-color: #3d3d42;
+}
+.main .modulars.relatedProduct .container .content ul .content_item:nth-child(2) .item:nth-child(3) .header {
+  background: url('../../images/shortVideo/related_product_three_top_bg.png') no-repeat;
+  background-size: 100% 100%;
+  background-color: #3d3d42;
+}
+.main .modulars.relatedProduct .container .content ul .content_item:nth-child(2) .item:nth-child(4) .header {
+  background: url('../../images/shortVideo/related_product_three_top1_bg.png') no-repeat;
+  background-size: 100% 100%;
+  background-color: #3d3d42;
+}
+.main .modulars.relatedProduct .container .content ul .content_item:nth-child(2) .item:nth-child(5) .header {
+  background: url('../../images/shortVideo/related_product_three_top_bg.png') no-repeat;
   background-size: 100% 100%;
   background-color: #3d3d42;
 }
@@ -473,47 +503,47 @@
   background-size: 100% 100%;
   background-color: #3d3d42;
 }
-.main .modulars.relatedProduct .container .content .left-arrow {
+.main .modulars.relatedProduct .left-arrow {
   position: absolute;
   border-radius: 50%;
   width: 80px;
   height: 80px;
   background: #000;
-  opacity: 0.5;
+  opacity: 0.9;
   text-align: center;
   line-height: 80px;
   top: 50%;
   transform: translate(0, -50%);
-  left: -85px;
+  left: 50px;
   display: none;
   cursor: pointer;
 }
-.main .modulars.relatedProduct .container .content .left-arrow.hide {
+.main .modulars.relatedProduct .left-arrow.hide {
   display: none;
 }
-.main .modulars.relatedProduct .container .content .left-arrow .icon-jiantou-copy {
+.main .modulars.relatedProduct .left-arrow .icon-jiantou-copy {
   color: #fff;
   font-size: 40px;
 }
-.main .modulars.relatedProduct .container .content .right-arrow {
+.main .modulars.relatedProduct .right-arrow {
   position: absolute;
   border-radius: 50%;
   width: 80px;
   height: 80px;
   background: #000;
-  opacity: 0.5;
+  opacity: 0.9;
   text-align: center;
   line-height: 80px;
   top: 50%;
   transform: translate(0, -50%);
-  right: -85px;
+  right: 50px;
   cursor: pointer;
   display: none;
 }
-.main .modulars.relatedProduct .container .content .right-arrow.hide {
+.main .modulars.relatedProduct .right-arrow.hide {
   display: none;
 }
-.main .modulars.relatedProduct .container .content .right-arrow .icon-arrow-right-copy {
+.main .modulars.relatedProduct .right-arrow .icon-arrow-right-copy {
   color: #fff;
   font-size: 40px;
 }

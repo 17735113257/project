@@ -379,6 +379,8 @@
         }
         // 相关产品
         &.relatedProduct {
+            
+            position: relative;
             background: url('../../images/shortVideo/related_product_bg.png') no-repeat center center;
             .title{
                 h2 {
@@ -419,57 +421,67 @@
                     }
                 }
                 .content{
+                    margin: 0 auto;
                     height: 470px;
-                    border:4px solid blue;
-                    position: relative;
-                    display: flex;
-                    padding-top:30px;
-                    box-sizing: border-box;
                     ul {
-                        flex: 1;
-                        display: flex;
+                        width: 100%;
+                        padding-top:20px;
+                        box-sizing: border-box;
+                        height: 470px;
+                        overflow: hidden;
+                        position: relative;
                         .content_item {
-                            flex: 1;
+                            position: absolute;
+                            left :0;
+                            top:15px;
+                            width: 3000px;
+                            height: 445px;
                             display: flex;
-                            justify-content: space-between;
-                            overflow: hidden;
-                            border:1px solid red;
+                            // border: 1px solid blue;
                             &.hide {
                                 display: none;
                             }
                             .item {
-                                display: flex;
-                                flex: 1;
+                                float:left;
+                                margin-right: 30px;
+                                width: 570px;
+                                background: #fff;
                                 .header {
+                                    width: 100%;
                                     padding: 26px 150px 26px 40px;
                                     box-sizing: border-box;
                                     height: 130px;
                                     border:0px solid #666;
                                     h3 {
+                                        width: 100%;
                                         color: #fff;
                                         font-size: 16px;
                                         margin-bottom: 10px;
                                         font-weight: 400;
                                     }
                                     p {
+                                        width: 100%;
                                         color: #d7d5d5;
                                         font-size: 14px;
                                     }
                                 }
                                 .body {
-                                    flex: 1;
                                     color: #666;
-                                    background-color: #fff;
-                                    padding: 26px 40px;
+                                    // background-color: #fff;
+                                    padding: 16px 40px;
+                                    padding-bottom:0px;
                                     box-sizing: border-box;
+                                    height: 280px;
+                                    background: #fff;
                                     ul{
+                                        height: 100%;
                                         li {
                                             margin-bottom: 30px;
                                             h4 {
                                                 color: #333;
                                                 font-size: 16px;
                                                 font-weight: 400;
-                                                margin-bottom: 20px;
+                                                margin-bottom: 15px;
                                             }
                                             p {
                                                 color: #666;
@@ -489,12 +501,7 @@
                                     }
                                 }
                             }
-                            .item:nth-child(2n + 1) {
-                                margin-right: 20px;
-                            }
-                            .item:nth-child(2n) {
-                                margin-right: 0px;
-                            }
+                            
                         }
                         .content_item:nth-child(1) {
                             .item:nth-child(1){
@@ -512,7 +519,43 @@
                                 }
                             }
                         }
-
+                        .content_item:nth-child(2) {
+                            .item:nth-child(1){
+                                .header {
+                                    background: url('../../images/shortVideo/related_product_three_top_bg.png') no-repeat;
+                                    background-size: 100% 100%;
+                                    background-color: #3d3d42;
+                                }
+                            }
+                            .item:nth-child(2){
+                                .header {
+                                    background: url('../../images/shortVideo/related_product_three_top1_bg.png') no-repeat;
+                                    background-size: 100% 100%;
+                                    background-color: #3d3d42;
+                                }
+                            }
+                            .item:nth-child(3){
+                                .header {
+                                    background: url('../../images/shortVideo/related_product_three_top_bg.png') no-repeat;
+                                    background-size: 100% 100%;
+                                    background-color: #3d3d42;
+                                }
+                            }
+                            .item:nth-child(4){
+                                .header {
+                                    background: url('../../images/shortVideo/related_product_three_top1_bg.png') no-repeat;
+                                    background-size: 100% 100%;
+                                    background-color: #3d3d42;
+                                }
+                            }
+                            .item:nth-child(5){
+                                .header {
+                                    background: url('../../images/shortVideo/related_product_three_top_bg.png') no-repeat;
+                                    background-size: 100% 100%;
+                                    background-color: #3d3d42;
+                                }
+                            }
+                        }
                         .content_item:nth-child(3) {
                             .item:nth-child(1){
                                 .header {
@@ -530,52 +573,54 @@
                             }
                         }
                     }
-                    .left-arrow {
-                        position: absolute;
-                        border-radius: 50%;
-                        width: 80px;
-                        height: 80px;
-                        background: #000;
-                        opacity: 0.5;
-                        text-align: center;
-                        line-height: 80px;
-                        top: 50%;
-                        transform: translate(0,-50%);
-                        left:-85px;
-                        display: none;
-                        cursor: pointer;
-                        &.hide{
-                            display: none;
-                        }
-                        .icon-jiantou-copy {
-                            color: #fff;
-                            font-size: 40px;
-                        }
-                    }
-                    .right-arrow {
-                        position: absolute;
-                        border-radius: 50%;
-                        width: 80px;
-                        height: 80px;
-                        background: #000;
-                        opacity: 0.5;
-                        text-align: center;
-                        line-height: 80px;
-                        top: 50%;
-                        transform: translate(0,-50%);
-                        right:-85px;
-                        cursor: pointer;
-                        display: none;
-                        &.hide{
-                            display: none;
-                        }
-                        .icon-arrow-right-copy {
-                            color: #fff;
-                            font-size: 40px;
-                        } 
-                    }
+                    
                     
                 }
+            }
+
+            .left-arrow {
+                position: absolute;
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                background: #000;
+                opacity: 0.9;
+                text-align: center;
+                line-height: 80px;
+                top: 50%;
+                transform: translate(0,-50%);
+                left:50px;
+                display: none;
+                cursor: pointer;
+                &.hide{
+                    display: none;
+                }
+                .icon-jiantou-copy {
+                    color: #fff;
+                    font-size: 40px;
+                }
+            }
+            .right-arrow {
+                position: absolute;
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                background: #000;
+                opacity: 0.9;
+                text-align: center;
+                line-height: 80px;
+                top: 50%;
+                transform: translate(0,-50%);
+                right:50px;
+                cursor: pointer;
+                display: none;
+                &.hide{
+                    display: none;
+                }
+                .icon-arrow-right-copy {
+                    color: #fff;
+                    font-size: 40px;
+                } 
             }
         }
 

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="keywords" content="your keywords">
+  <meta name="description" content="your description">
+  <!-- jquery库 -->
+ <script src = "../../js/public/jquery-1.12.4.js"></script>
+ 
+ <!-- 初始css -->
+ <link rel="stylesheet" href="../../css/public/base.css">
+ <!-- 本页面css -->
+ <link rel="stylesheet" href="../../css/shortVideo/shortVideo.css">
+
+ <!-- Echart的引入 -->
+ <script src = "../../js/echart/echarts.min.js"></script>
+<!-- 本页面js -->
+<script src = "../../js/shortVideo/shortVideo.js"></script>
+<script src = "../../js/shortVideo/sceneEchart.js"></script>
+
+<!-- 字体图标 -->
+
+<link rel="stylesheet" href="../../iconfont/iconfont.css">
+<title>短视频</title>
+
+</head>
+<body>
+
+    <include src="../../public/header/header.html"></include>
+    <div class = 'main'>
+      <div class = 'shortvideo-banner'>
+          <div class = "container w">
+            <h1>短视频解决方案</h1>
+            <p>短视频解决方案是针对泛娱乐、媒体、UGC等领域的一站式短视频服务方案。让您快速拥有美颜、滤镜、AR等丰富采编能力。</p>
+            <p>依托领先的人工智能技术，大幅提升运营效率。借助百度强大的内容渠道，帮您快速获取更多流量。</p>
+          </div>
+          <!-- banner导航 -->
+          <div class = 'shortvideo-nav-bar'>
+            <ul class = 'w'>
+              <li><a href="javascript:" class = "active">场景架构</a></li>
+              <li><a href="javascript:" >方案优势</a></li>
+              <li><a href="javascript:" >典型应用</a></li>
+              <li><a href="javascript:" >相关产品</a></li>
+              <li><a href="javascript:" >优质渠道分发</a></li>
+              <li><a href="javascript:" >对接流程</a></li>
+              <li><a href="javascript:" >文档/支持</a></li>
+            </ul>
+          </div>
+      </div>
+
+      
+      <!-- 场景架构 -->
+      <div class = 'modulars w scene'>
+        <div class = " title">
+          <h2>场景架构</h2>
+          <p>完善的视频解决方案，轻松解决各种使用场景</p>
+        </div>
+        <div class = "content clearfix">
+          <div class = "content_left">
+            <ul class = 'content_left_tab clearfix'>
+              <li src_bottom = '../../images/shortVideo/scene_one.png'><a href="javascript:" class = "activeClick">短视屏</a></li>
+              <li src_bosttom = '../../images/shortVideo/scene_two.png'><a href="javascript:">直播</a></li>
+              <li src_bottom = '../../images/shortVideo/scene_three.png'><a href="javascript:">长视频</a></li>
+              <li src_bottom = '../../images/shortVideo/scene_four.png'><a href="javascript:">短视屏+</a></li>
+            </ul>
+            <div class = "content_left_bottom">
+              <img src="../../images/shortVideo/scene_one.png" alt="">
+            </div>
+          </div>
+          <div class = 'content_right'>
+            <ul>
+              <li>
+                  <div class = 'top' id = 'scene_right_top' style = 'width: 100% ;height: 50%'>
+
+                  </div>
+                  <div class = 'bottom' id = 'scene_right_bottom' style = 'width: 100% ;height: 50%'>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 方案优势 -->
+      <div class = 'project modulars'>
+          <div class = " title w">
+              <h2>方案优势</h2>
+              <p>完善的视频解决方案，轻松解决各种使用场景</p>
+            </div>
+          <ul class = "clearfix">
+            <li>
+              <div class = 'bg'>
+              </div>
+              <div class = 'start'>
+                  <img src="../../images/shortVideo/project_one_start.png" endSrc = '../../images/shortVideo/project_one_end.png' alt="">
+                  <p class= 'line'></p>
+                  <p class = 'title'>电商解决方案</p>
+                  <p class = 'desc'>
+                    结合大数据能力帮助电商企业快速搭建平台、应对业务高并发，剖析秒杀、视频直播等场景
+                  </p>
+                  <a href="javascript:">查看详情</a>
+              </div>
+            </li>
+
+
+
+            <li>
+              <div class = 'bg'>
+              </div>
+              <div class = 'start'>
+                  <img src="../../images/shortVideo/project_two_start.png" endSrc = '../../images/shortVideo/project_two_end.png' alt="">
+                  <p class= 'line'></p>
+                  <p class = 'title'>APP解决方案</p>
+                  <p class = 'desc'>
+                      助力企业快速构建APP，高效实现移动数字化转型
+                  </p>
+                  <a href="javascript:">查看详情</a>
+              </div>
+            </li>
+
+
+            <li>
+              <div class = 'bg'>
+              </div>
+              <div class = 'start'>
+                  <img src="../../images/shortVideo/project_three_start.png" endSrc = '../../images/shortVideo/project_three_end.png' alt="">
+                  <p class= 'line'></p>
+                  <p class = 'title'>游戏解决方案</p>
+                  <p class = 'desc'>
+                      为游戏开发者提供专属集群、尊享VIP服务、专项扶持基金、多场景游戏部署解决方案
+                  </p>
+                  <a href="javascript:">查看详情</a>
+              </div>
+            </li>
+
+
+            <li>
+              <div class = 'bg'>
+              </div>
+              <div class = 'start'>
+                  <img src="../../images/shortVideo/project_four_start.png" endSrc = '../../images/shortVideo/project_four_end.png' alt="">
+                  <p class= 'line'></p>
+                  <p class = 'title'>网站解决方案</p>
+                  <p class = 'desc'>
+                      依据网站不同发展阶段，为网站类用户提供最佳上云方案，有效降低运维难度和整体IT成本
+                  </p>
+                  <a href="javascript:">查看详情</a>
+              </div>
+            </li>
+
+
+            <li>
+                <div class = 'bg'>
+                </div>
+                <div class = 'start'>
+                    <img src="../../images/shortVideo/project_five_start.png" endSrc = '../../images/shortVideo/project_five_end.png' alt="">
+                    <p class= 'line'></p>
+                    <p class = 'title'>音视频解决方案</p>
+                    <p class = 'desc'>
+                        一站式提供“海量存储、高效分发、极速网络”等服务， 轻松坐享CCTV-5、微博的传播能力x
+                    </p>
+                    <a href="javascript:">查看详情</a>
+                </div>
+              </li>
+          </ul>
+      </div>
+
+      <!-- 典型应用 -->
+      <div class = 'modulars w apply' >
+        <div class = " title w">
+          <h2>典型应用</h2>
+          <p>一站式短视频服务，让你专注核心业务创新</p>
+        </div>
+
+        <div class = 'apply_content'>
+            <div class = 'apply_left'>
+                <div class = 'apply_left_side'>
+                  <img src="../../images/shortVideo/apply_left_img.png" alt="">
+                </div>
+                <div class = 'apply_left_inside'>
+                  <ul>
+                    <li>
+                        <img class= 'first' src="../../images/shortVideo/apply_left_img_one_one.png" alt="">
+                        <img src="../../images/shortVideo/apply_left_img_one_three.png" alt="">
+                        <img src="../../images/shortVideo/apply_left_img_one_two.png" alt="">
+                        <img src="../../images/shortVideo/apply_left_img_one.png" alt="">
+
+                    </li>
+                    <li><img src="../../images/shortVideo/apply_left_img_two.png" alt=""></li>
+                    <li><img src="../../images/shortVideo/apply_left_img_three.png" alt=""></li>
+                    <li><img src="../../images/shortVideo/apply_left_img_four.png" alt=""></li>
+                    <li><img src="../../images/shortVideo/apply_left_img_five.png" alt=""></li>
+                  </ul>
+                </div>
+            </div>
+            <div class = 'apply_right'>
+                <ul>
+                  <li>
+                    <span src = '../../images/shortVideo/apply_right_point_one.png' class = "point"></span>
+                    <div class = 'container'>
+                      <div class = 'title'>
+                          <p>Step.1 视频剪辑加工</p>
+                          <span>
+    
+                          </span>
+                      </div>
+                      <div class = 'content hide'>
+                          <p>可在手机端流畅地完成剪辑、拼接、添加滤镜等特效制作，让开发者的app快速获取多种短视频创作玩法的能力</p>
+                          
+                      </div>
+                    </div>
+                  </li>
+    
+                  <li>
+                    <span src = '../../images/shortVideo/apply_right_point_two.png' class = "point"></span>
+                    <div class = 'container'>
+                      <div class = 'title'>
+                          <p>Step.2 视频极速加密上传</p>
+                          <span>
+    
+                          </span>
+                      </div>
+                      <div class = 'content hide'>
+                          <p> 灵活上传，快速转码，并提供高可靠URL防盗链功能保障数字内容安全相关产品：音视频点播VOD</p>
+                          
+                      </div>
+                    </div>
+                  </li>
+    
+                  <li>
+                    <span src = '../../images/shortVideo/apply_right_point_three.png' class = "point"></span>
+                    <div class = 'container'>
+                      <div class = 'title'>
+                          <p>SStep.3 AI自动审核／打标签</p>
+                          <span>
+    
+                          </span>
+                      </div>
+                      <div class = 'content hide'>
+                          <p> 充足的带宽、存储资源，毫秒级响应时间，高吞吐能力，用户畅享流畅无卡顿的视频体验</p>
+                          
+                      </div>
+                    </div>
+                  </li>
+    
+                  <li>
+                    <span src = '../../images/shortVideo/apply_right_point_four.png' class = "point"></span>
+                    <div class = 'container'>
+                      <div class = 'title'>
+                          <p>Step.4 视频流畅播放</p>
+                          <span>
+    
+                          </span>
+                      </div>
+                      <div class = 'content hide'>
+                          <p>充足的带宽、存储资源，毫秒级响应时间，高吞吐能力，用户畅享流畅无卡顿的视频体验</p>
+                          
+                      </div>
+                    </div>
+                  </li>
+                    <li>
+                      <span src = '../../images/shortVideo/apply_right_point_five.png' class = "point"></span>
+                      <div class = 'container'>
+                        <div class = 'title'>
+                            <p>Step.5 精准触达用户，百度生态渠道更多品牌曝光</p>
+                            <span>
+      
+                            </span>
+                        </div>
+                        <div class = 'content hide'>
+                            <p>充足的带宽、存储资源，毫秒级响应时间，高吞吐能力，用户畅享流畅无卡顿的视频体验</p>
+                            
+                        </div>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+
+      <!-- 相关产品 -->
+      <div class ='modulars relatedProduct'>
+        <div class = " title w">
+          <h2>相关产品</h2>
+          <p>高性能基础产品+AI人工智能产品，大幅提高运营效率</p>
+        </div>
+
+        <div class = 'container'>
+          <ul class = 'title clearfix'>
+            <li><a href="javascript:" class = 'active'>基础视频产品</a></li>
+            <li><a href="javascript:">人工智能分析</a></li>
+            <li><a href="javascript:">大数据搜索推荐</a></li>
+          </ul>
+          <div class = 'content w'> 
+            <ul>
+              <li class= 'content_item'>
+                <div class = "item">
+                  <div class = 'header'> 
+                      <h3>音视频点播 VOD</h3>
+                      <p>VOD是一站式的音视频点播服务，提供极速稳定的视频上传、存储、自动转码和加速播放等服务，满足不同终端，不同网络环境下的音视频播放需求</p>
+                  </div>
+                  <div class = "body">
+                      <ul>
+                          <li> 
+                            <h4>多重版权保护</h4> 
+                            <p>11个9的存储可靠性、加密防盗链、业界领先的业务双重鉴权的版权保护方案，保证视频内容安全</p> 
+                          </li>
+                          <li> 
+                            <h4>多重版权保护</h4> 
+                            <p>11个9的存储可靠性、加密防盗链、业界领先的业务双重鉴权的版权保护方案，保证视频内容安全</p> 
+                          </li>
+                          <a href="javascript:">查看详情</a>
+                      </ul>
+                  </div>
+                </div>
+
+                <div class = "item">
+                  <div class = 'header'> 
+                      <h3>内容分发网络 CDN</h3>
+                      <p>对外开放百度优质节点，提供与百度搜索、百度地图、百度网盘同质的CDN服务，让您的网站像百度搜索一样快</p>
+                  </div>
+                  <div class = "body">
+                      <ul>
+                          <li> 
+                            <h4>强大快速</h4> 
+                            <p>自建高质量节点，覆盖全国30多个省市；10线+运营商网络接入；毫秒级别响应时间</p> 
+                          </li>
+                          <li> 
+                            <h4>稳定安全</h4> 
+                            <p>服务可用性高达99.95%；企业级WAF、DDOS防御机制；7*24小时全网监控与工单响应</p> 
+                          </li>
+                          <a href="javascript:">查看详情</a>
+                      </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class= 'content_item hide'>
+                <div class = "item">
+                  <div class = 'header'> 
+                      <h3>视频搜索系统 VOD</h3>
+                      <p>基于内容分析，实现视频内容可搜索，提升搜索体验</p>
+                  </div>
+                  <div class = "body">
+                      <ul>
+                          <li> 
+                            <h4>准确率高</h4> 
+                            <p>服务底层采用高性能的深度学习模型，提供更高精度的检索结果</p> 
+                          </li>
+                          <li> 
+                            <h4>云端服务，无需运维</h4> 
+                            <p>强大的批量处理大数据的能力，快速完成海量视频检索</p> 
+                          </li>
+                          <a href="javascript:">查看详情</a>
+                      </ul>
+                  </div>
+                </div>
+
+                <div class = "item">
+                  <div class = 'header'> 
+                      <h3>视频推荐系统</h3>
+                      <p>基于内容分析，依托百度在多种推荐场景上的技术积累和丰富的用户画像数据，实现视频的灵活运营与个性化推送，快速提升用户体验</p>
+                  </div>
+                  <div class = "body">
+                      <ul>
+                          <li> 
+                            <h4>快速搭建，节省人力</h4> 
+                            <p>提供通用推荐功能的同时也支持定制化开发，帮企业节省大量人力</p> 
+                          </li>
+                          <li> 
+                            <h4>百度数据，增强效果</h4> 
+                            <p>融入百度丰富的用户画像数据，更加精准的评估用户偏好，增强推荐效果</p> 
+                          </li>
+                          <a href="javascript:">查看详情</a>
+                      </ul>
+                  </div>
+                </div>
+                <div class = "item">
+                  <div class = 'header'> 
+                      <h3>视频推荐系统</h3>
+                      <p>基于内容分析，依托百度在多种推荐场景上的技术积累和丰富的用户画像数据，实现视频的灵活运营与个性化推送，快速提升用户体验</p>
+                  </div>
+                  <div class = "body">
+                      <ul>
+                          <li> 
+                            <h4>快速搭建，节省人力</h4> 
+                            <p>提供通用推荐功能的同时也支持定制化开发，帮企业节省大量人力</p> 
+                          </li>
+                          <li> 
+                            <h4>百度数据，增强效果</h4> 
+                            <p>融入百度丰富的用户画像数据，更加精准的评估用户偏好，增强推荐效果</p> 
+                          </li>
+                          <a href="javascript:">查看详情</a>
+                      </ul>
+                  </div>
+                </div>
+                <div class = "item">
+                  <div class = 'header'> 
+                      <h3>音视频点播 VOD</h3>
+                      <p>VOD是一站式的音视频点播服务，提供极速稳定的视频上传、存储、自动转码和加速播放等服务，满足不同终端，不同网络环境下的音视频播放需求</p>
+                  </div>
+                  <div class = "body">
+                      <ul>
+                          <li> 
+                            <h4>多重版权保护</h4> 
+                            <p>11个9的存储可靠性、加密防盗链、业界领先的业务双重鉴权的版权保护方案，保证视频内容安全</p> 
+                          </li>
+                          <li> 
+                            <h4>多重版权保护</h4> 
+                            <p>11个9的存储可靠性、加密防盗链、业界领先的业务双重鉴权的版权保护方案，保证视频内容安全</p> 
+                          </li>
+                          <a href="javascript:">查看详情</a>
+                      </ul>
+                  </div>
+                </div>
+
+                <div class = "item">
+                  <div class = 'header'> 
+                      <h3>内容分发网络 CDN</h3>
+                      <p>对外开放百度优质节点，提供与百度搜索、百度地图、百度网盘同质的CDN服务，让您的网站像百度搜索一样快</p>
+                  </div>
+                  <div class = "body">
+                      <ul>
+                          <li> 
+                            <h4>强大快速</h4> 
+                            <p>自建高质量节点，覆盖全国30多个省市；10线+运营商网络接入；毫秒级别响应时间</p> 
+                          </li>
+                          <li> 
+                            <h4>稳定安全</h4> 
+                            <p>服务可用性高达99.95%；企业级WAF、DDOS防御机制；7*24小时全网监控与工单响应</p> 
+                          </li>
+                          <a href="javascript:">查看详情</a>
+                      </ul>
+                  </div>
+                </div>
+              </li>
+              <li class= 'content_item hide' >
+                <div class = "item">
+                  <div class = 'header'> 
+                      <h3>视频搜索系统 VOD</h3>
+                      <p>基于内容分析，实现视频内容可搜索，提升搜索体验</p>
+                  </div>
+                  <div class = "body">
+                      <ul>
+                          <li> 
+                            <h4>准确率高</h4> 
+                            <p>服务底层采用高性能的深度学习模型，提供更高精度的检索结果</p> 
+                          </li>
+                          <li> 
+                            <h4>云端服务，无需运维</h4> 
+                            <p>强大的批量处理大数据的能力，快速完成海量视频检索</p> 
+                          </li>
+                          <a href="javascript:">查看详情</a>
+                      </ul>
+                  </div>
+                </div>
+
+                <div class = "item">
+                  <div class = 'header'> 
+                      <h3>视频推荐系统</h3>
+                      <p>基于内容分析，依托百度在多种推荐场景上的技术积累和丰富的用户画像数据，实现视频的灵活运营与个性化推送，快速提升用户体验</p>
+                  </div>
+                  <div class = "body">
+                      <ul>
+                          <li> 
+                            <h4>快速搭建，节省人力</h4> 
+                            <p>提供通用推荐功能的同时也支持定制化开发，帮企业节省大量人力</p> 
+                          </li>
+                          <li> 
+                            <h4>百度数据，增强效果</h4> 
+                            <p>融入百度丰富的用户画像数据，更加精准的评估用户偏好，增强推荐效果</p> 
+                          </li>
+                          <a href="javascript:">查看详情</a>
+                      </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+        <div class = 'left-arrow'>
+          <i class="iconfont icon-jiantou-copy "></i>
+        </div>
+        <div class = 'right-arrow'>
+            <i class="iconfont icon-arrow-right-copy"></i>
+        </div>
+      </div>
+      
+
+
+      <!-- 优质渠道分发 -->
+      <div class = 'modulars w channel'>
+          <div class = " title w">
+            <h2>优质渠道分发</h2>
+            <p>优质渠道曝光引流，链接亿万用户，让你快速获取更多流量</p>
+          </div>
+
+          <ul class = "content">
+            <li>
+              <div>
+                  <img src="../../images/shortVideo/channel_one.png" alt="">
+              </div>
+              <h4>百度搜索</h4>
+              <p>全球最大的中文搜索引擎</p>
+            </li>
+            <li>
+              <div>
+                  <img src="../../images/shortVideo/channel_two.png" alt="">
+              </div>
+              <h4>手机百度</h4>
+              <p>6亿用户在用的手机搜索客户端</p>
+            </li>
+            <li>
+              <div>
+                  <img src="../../images/shortVideo/channel_two.png" alt="">
+              </div>
+              <h4>百度贴吧</h4>
+              <p>全球最大的中文社区</p>
+            </li>
+            <li>
+              <div>
+                  <img src="../../images/shortVideo/channel_three.png" alt="">
+              </div>
+              <h4>百度好看</h4>
+              <p>百度旗下的短视频聚合平台</p>
+            </li>
+          </ul>
+      </div>
+
+
+      <!-- 对接流程 -->
+
+      <div class = 'modulars joint '>
+          <div class = " title w">
+            <h2>对接流程</h2>
+            <p>丰富的多媒体企业服务经验，有竞争力的行业解决方案</p>
+          </div>
+
+          <div class= 'content w'>
+            <ul class ='clearfix'>
+              <li>
+                  <h3>量身定制解决方案</h3>
+                  <p>1V1专业咨询，提供定制化解决方案</p>
+                  <img src="../../images/shortVideo/joint_one.png" alt="">
+              </li>
+              <li>
+                  <h3>测试对接</h3>
+                  <p>开通所需服务免费测试，全程监控，快速响应迭代</p>
+                  <img src="../../images/shortVideo/joint_two.png" alt="">
+              </li>
+              <li>
+                  <h3>对接上线</h3>
+                  <p>提供定制化解决方案</p>
+                  <img src="../../images/shortVideo/joint_three.png" alt="">
+              </li>
+              <li>
+                  <h3>正式对接上线</h3>
+                  <p>专人1V1售后服务，确保业务稳定运行</p>
+                  <img src="../../images/shortVideo/joint_four.png" alt="">
+              </li>
+            </ul>
+          </div>
+      </div>
+
+
+      <!-- 文档交流 -->
+      <div class = 'modulars document'>
+        <div class = " title w">
+          <h2>文档/支持</h2>
+        </div>
+        <div class = 'container w'>
+          <div class = 'content'>
+              <ul class = "clearfix">
+                <li>
+                  <span></span>
+                  <p>政策补贴</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p>后服务</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p>市场推广</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p>投资聚合</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p>培训支持</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p>技术及服务</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p>智慧农业</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p>游戏云</p>
+                </li>
+              </ul>
+          </div>
+          <div class = 'left-arrow'>
+              <i class="iconfont icon-jiantou-copy "></i>
+          </div>
+          <div class = 'right-arrow'>
+              <i class="iconfont icon-arrow-right-copy active"></i>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <!-- 右侧固定栏目 -->
+      <div class = 'fix-right'>
+        <ul>
+          <li>
+            <i class = 'iconfont icon-dingwei'></i>
+            <div class = 'desc'>
+              <span>业务</span>
+              <span>咨询</span>
+            </div>
+          </li>
+          <li>
+            <i class = 'iconfont icon-dingwei'></i>
+            <div class = 'desc'>
+                <span>官方</span>
+                <span>论坛</span>
+            </div>
+          </li>
+          <li>
+            <i class = 'iconfont icon-dingwei'></i>
+            <div class = 'desc'>
+                <span>联系</span>
+                <span>我们</span>
+            </div>
+            
+          </li>
+          <li class = "backTop">
+            <i class = 'iconfont icon-xiangxiajiantou'></i>
+            <div class = 'desc'>
+                <span>回到</span>
+                <span>顶部</span>
+            </div>
+            
+          </li>
+        </ul>
+      </div>
+
+    </div>
+</body>
+</html>
