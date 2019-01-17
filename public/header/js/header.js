@@ -8,7 +8,7 @@ $('.l_nav').find('.navTitle').mouseenter(function(){
 });
 // 鼠标移出，隐藏navitem
 $('.l_nav').find('.navTitle').mouseleave(function(){
-    $(this).find('.navItem').fadeOut(300);
+    $(this).find('.navItem').hide();
     // 初始化所有产品的    navitem   样式----保证每次移入到产品都是第一行“全部产品”显示
     setTimeout( function(){
         // 给第一个li添加样式，其余li清除样式

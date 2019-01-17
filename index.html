@@ -8,28 +8,48 @@
   <meta name="keywords" content="your keywords">
   <meta name="description" content="your description">
   <!-- jquery库 -->
- <script src = "../../js/public/jquery-1.12.4.js"></script>
+ <script src = "./js/public/jquery-1.12.4.js"></script>
  
  <!-- 初始css -->
- <link rel="stylesheet" href="../../css/public/base.css">
+ <link rel="stylesheet" href="./css/public/base.css">
  <!-- 本页面css -->
- <link rel="stylesheet" href="../../css/shortVideo/shortVideo.css">
+ <link rel="stylesheet" href="./css/shortVideo/shortVideo.css">
 
  <!-- Echart的引入 -->
- <script src = "../../js/echart/echarts.min.js"></script>
+ <script src = "./js/echart/echarts.min.js"></script>
 <!-- 本页面js -->
-<script src = "../../js/shortVideo/shortVideo.js"></script>
-<script src = "../../js/shortVideo/sceneEchart.js"></script>
+<script src = "./js/shortVideo/shortVideo.js"></script>
+<script src = "./js/shortVideo/sceneEchart.js"></script>
 
 <!-- 字体图标 -->
 
-<link rel="stylesheet" href="../../iconfont/iconfont.css">
+<link rel="stylesheet" href="./iconfont/iconfont.css">
+
+<!-- 引入头部的js -->
+<!-- <script src = './public/header/js/header.js'></script> -->
+
+
+<!-- 引入头部的css -->
+<!-- <link rel="stylesheet" href="./public/header/css/header.css"> -->
+
+
 <title>短视频</title>
 
 </head>
 <body>
 
-    <include src="../../public/header/header.html"></include>
+  
+    <script type="text/javascript" src="./public/header/header.js"></script>
+    <!-- #include file = "myfile.inc" -->
+    <!-- <include file="./public/header/header1.html"></include> -->
+    <!-- <iframe   frameborder=0   border=0   width=300   height=300   src="./public/header/header1.html" mce_src="head.htm"></iframe>   -->
+
+    <!-- <div id="page1"></div><script> $("#page1").load("http://www.baidu.com"); </script> -->
+
+    <!-- <object style="border:0px" type="text/x-scriptlet" data="./public/header/header.html" width=100% height=300></object> -->
+
+
+
     <div class = 'main'>
       <div class = 'shortvideo-banner'>
           <div class = "container w">
@@ -61,13 +81,13 @@
         <div class = "content clearfix">
           <div class = "content_left">
             <ul class = 'content_left_tab clearfix'>
-              <li src_bottom = '../../images/shortVideo/scene_one.png'><a href="javascript:" class = "activeClick">短视屏</a></li>
-              <li src_bosttom = '../../images/shortVideo/scene_two.png'><a href="javascript:">直播</a></li>
-              <li src_bottom = '../../images/shortVideo/scene_three.png'><a href="javascript:">长视频</a></li>
-              <li src_bottom = '../../images/shortVideo/scene_four.png'><a href="javascript:">短视屏+</a></li>
+              <li src_bottom = './images/shortVideo/scene_one.png'><a href="javascript:" class = "activeClick">短视屏</a></li>
+              <li src_bosttom = './images/shortVideo/scene_two.png'><a href="javascript:">直播</a></li>
+              <li src_bottom = './images/shortVideo/scene_three.png'><a href="javascript:">长视频</a></li>
+              <li src_bottom = './images/shortVideo/scene_four.png'><a href="javascript:">短视屏+</a></li>
             </ul>
             <div class = "content_left_bottom">
-              <img src="../../images/shortVideo/scene_one.png" alt="">
+              <img src="./images/shortVideo/scene_one.png" alt="">
             </div>
           </div>
           <div class = 'content_right'>
@@ -94,7 +114,7 @@
               <div class = 'bg'>
               </div>
               <div class = 'start'>
-                  <img src="../../images/shortVideo/project_one_start.png" endSrc = '../../images/shortVideo/project_one_end.png' alt="">
+                  <img src="./images/shortVideo/project_one_start.png" endSrc = './images/shortVideo/project_one_end.png' alt="">
                   <p class= 'line'></p>
                   <p class = 'title'>电商解决方案</p>
                   <p class = 'desc'>
@@ -110,7 +130,7 @@
               <div class = 'bg'>
               </div>
               <div class = 'start'>
-                  <img src="../../images/shortVideo/project_two_start.png" endSrc = '../../images/shortVideo/project_two_end.png' alt="">
+                  <img src="./images/shortVideo/project_two_start.png" endSrc = './images/shortVideo/project_two_end.png' alt="">
                   <p class= 'line'></p>
                   <p class = 'title'>APP解决方案</p>
                   <p class = 'desc'>
@@ -125,7 +145,7 @@
               <div class = 'bg'>
               </div>
               <div class = 'start'>
-                  <img src="../../images/shortVideo/project_three_start.png" endSrc = '../../images/shortVideo/project_three_end.png' alt="">
+                  <img src="./images/shortVideo/project_three_start.png" endSrc = './images/shortVideo/project_three_end.png' alt="">
                   <p class= 'line'></p>
                   <p class = 'title'>游戏解决方案</p>
                   <p class = 'desc'>
@@ -140,7 +160,7 @@
               <div class = 'bg'>
               </div>
               <div class = 'start'>
-                  <img src="../../images/shortVideo/project_four_start.png" endSrc = '../../images/shortVideo/project_four_end.png' alt="">
+                  <img src="./images/shortVideo/project_four_start.png" endSrc = './images/shortVideo/project_four_end.png' alt="">
                   <p class= 'line'></p>
                   <p class = 'title'>网站解决方案</p>
                   <p class = 'desc'>
@@ -155,7 +175,7 @@
                 <div class = 'bg'>
                 </div>
                 <div class = 'start'>
-                    <img src="../../images/shortVideo/project_five_start.png" endSrc = '../../images/shortVideo/project_five_end.png' alt="">
+                    <img src="./images/shortVideo/project_five_start.png" endSrc = './images/shortVideo/project_five_end.png' alt="">
                     <p class= 'line'></p>
                     <p class = 'title'>音视频解决方案</p>
                     <p class = 'desc'>
@@ -177,28 +197,28 @@
         <div class = 'apply_content'>
             <div class = 'apply_left'>
                 <div class = 'apply_left_side'>
-                  <img src="../../images/shortVideo/apply_left_img.png" alt="">
+                  <img src="./images/shortVideo/apply_left_img.png" alt="">
                 </div>
                 <div class = 'apply_left_inside'>
                   <ul>
                     <li>
-                        <img class= 'first' src="../../images/shortVideo/apply_left_img_one_one.png" alt="">
-                        <img src="../../images/shortVideo/apply_left_img_one_three.png" alt="">
-                        <img src="../../images/shortVideo/apply_left_img_one_two.png" alt="">
-                        <img src="../../images/shortVideo/apply_left_img_one.png" alt="">
+                        <img class= 'first' src="./images/shortVideo/apply_left_img_one_one.png" alt="">
+                        <img src="./images/shortVideo/apply_left_img_one_three.png" alt="">
+                        <img src="./images/shortVideo/apply_left_img_one_two.png" alt="">
+                        <img src="./images/shortVideo/apply_left_img_one.png" alt="">
 
                     </li>
-                    <li><img src="../../images/shortVideo/apply_left_img_two.png" alt=""></li>
-                    <li><img src="../../images/shortVideo/apply_left_img_three.png" alt=""></li>
-                    <li><img src="../../images/shortVideo/apply_left_img_four.png" alt=""></li>
-                    <li><img src="../../images/shortVideo/apply_left_img_five.png" alt=""></li>
+                    <li><img src="./images/shortVideo/apply_left_img_two.png" alt=""></li>
+                    <li><img src="./images/shortVideo/apply_left_img_three.png" alt=""></li>
+                    <li><img src="./images/shortVideo/apply_left_img_four.png" alt=""></li>
+                    <li><img src="./images/shortVideo/apply_left_img_five.png" alt=""></li>
                   </ul>
                 </div>
             </div>
             <div class = 'apply_right'>
                 <ul>
                   <li>
-                    <span src = '../../images/shortVideo/apply_right_point_one.png' class = "point"></span>
+                    <span src = './images/shortVideo/apply_right_point_one.png' class = "point"></span>
                     <div class = 'container'>
                       <div class = 'title'>
                           <p>Step.1 视频剪辑加工</p>
@@ -214,7 +234,7 @@
                   </li>
     
                   <li>
-                    <span src = '../../images/shortVideo/apply_right_point_two.png' class = "point"></span>
+                    <span src = './images/shortVideo/apply_right_point_two.png' class = "point"></span>
                     <div class = 'container'>
                       <div class = 'title'>
                           <p>Step.2 视频极速加密上传</p>
@@ -230,7 +250,7 @@
                   </li>
     
                   <li>
-                    <span src = '../../images/shortVideo/apply_right_point_three.png' class = "point"></span>
+                    <span src = './images/shortVideo/apply_right_point_three.png' class = "point"></span>
                     <div class = 'container'>
                       <div class = 'title'>
                           <p>SStep.3 AI自动审核／打标签</p>
@@ -246,7 +266,7 @@
                   </li>
     
                   <li>
-                    <span src = '../../images/shortVideo/apply_right_point_four.png' class = "point"></span>
+                    <span src = './images/shortVideo/apply_right_point_four.png' class = "point"></span>
                     <div class = 'container'>
                       <div class = 'title'>
                           <p>Step.4 视频流畅播放</p>
@@ -261,7 +281,7 @@
                     </div>
                   </li>
                     <li>
-                      <span src = '../../images/shortVideo/apply_right_point_five.png' class = "point"></span>
+                      <span src = './images/shortVideo/apply_right_point_five.png' class = "point"></span>
                       <div class = 'container'>
                         <div class = 'title'>
                             <p>Step.5 精准触达用户，百度生态渠道更多品牌曝光</p>
@@ -502,28 +522,28 @@
           <ul class = "content">
             <li>
               <div>
-                  <img src="../../images/shortVideo/channel_one.png" alt="">
+                  <img src="./images/shortVideo/channel_one.png" alt="">
               </div>
               <h4>百度搜索</h4>
               <p>全球最大的中文搜索引擎</p>
             </li>
             <li>
               <div>
-                  <img src="../../images/shortVideo/channel_two.png" alt="">
+                  <img src="./images/shortVideo/channel_two.png" alt="">
               </div>
               <h4>手机百度</h4>
               <p>6亿用户在用的手机搜索客户端</p>
             </li>
             <li>
               <div>
-                  <img src="../../images/shortVideo/channel_two.png" alt="">
+                  <img src="./images/shortVideo/channel_two.png" alt="">
               </div>
               <h4>百度贴吧</h4>
               <p>全球最大的中文社区</p>
             </li>
             <li>
               <div>
-                  <img src="../../images/shortVideo/channel_three.png" alt="">
+                  <img src="./images/shortVideo/channel_three.png" alt="">
               </div>
               <h4>百度好看</h4>
               <p>百度旗下的短视频聚合平台</p>
@@ -545,22 +565,22 @@
               <li>
                   <h3>量身定制解决方案</h3>
                   <p>1V1专业咨询，提供定制化解决方案</p>
-                  <img src="../../images/shortVideo/joint_one.png" alt="">
+                  <img src="./images/shortVideo/joint_one.png" alt="">
               </li>
               <li>
                   <h3>测试对接</h3>
                   <p>开通所需服务免费测试，全程监控，快速响应迭代</p>
-                  <img src="../../images/shortVideo/joint_two.png" alt="">
+                  <img src="./images/shortVideo/joint_two.png" alt="">
               </li>
               <li>
                   <h3>对接上线</h3>
                   <p>提供定制化解决方案</p>
-                  <img src="../../images/shortVideo/joint_three.png" alt="">
+                  <img src="./images/shortVideo/joint_three.png" alt="">
               </li>
               <li>
                   <h3>正式对接上线</h3>
                   <p>专人1V1售后服务，确保业务稳定运行</p>
-                  <img src="../../images/shortVideo/joint_four.png" alt="">
+                  <img src="./images/shortVideo/joint_four.png" alt="">
               </li>
             </ul>
           </div>

@@ -6,7 +6,7 @@
 }
 .main .shortvideo-banner {
   width: 100%;
-  height: 300px;
+  height: 400px;
   position: relative;
   background: url('../../images/shortVideo/banner.png') no-repeat center top;
   /*banner导航*/
@@ -21,7 +21,7 @@
 .main .shortvideo-banner .container h1 {
   font-size: 48px;
   color: #fff;
-  margin: 30px 0;
+  margin: 90px 0 30px;
 }
 .main .shortvideo-banner .container p {
   color: #fff;
